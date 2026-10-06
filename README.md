@@ -54,26 +54,41 @@ Development & Version Control
 Cloud Processing Stage
 
 Raw Sales Data
+
       |
       v
+
 Azure Data Lake Storage
+
       |
       v
+
 Azure Databricks
+
       |
       v
+
 PySpark
+
       |
+
       +-- Data Quality Assessment
+
       +-- Data Cleaning
+
       |
       v
+
 Cleaned Dataset
+
       |
       v
+
 Delta Lake
 
+
 **Phase 2:**
+
 Local Analytical Stage
 
 Persisted Cleaned Data
