@@ -83,22 +83,11 @@ Persisted Cleaned Data -> VS Code / Python -> PySpark to Pandas (Data Reading) -
 **Repository Structure**
 
 Sales-Analytics-Using-Azure-Databricks/
-
-|
-+-- notebooks/
-|   +-- data_analysis.ipynb
-|   +-- data_quality_investigation.ipynb
-|   +-- sales_performance.ipynb
-|
-+-- data/
-|   +-- delta/
-|       +-- sales_cleaned/        # Local data; excluded from Git
-|
-+-- sql/                          # SQL analysis / reusable queries
-|
-+-- src/                          # Reusable Python code where applicable
-|
-+-- DeltaLake.ipynb               # Original Databricks Delta Lake work
-+-- Utkarsh_Sales Project.ipynb   # Original ingestion & PySpark cleaning
-+-- README.md
-+-- .gitignore
+├── .gitignore
+├── DeltaLake.ipynb
+├── README.md
+├── Utkarsh_Sales Project.ipynb
+└── notebook/
+    ├── data_analysis.ipynb
+    ├── data_quality_investigation.ipynb
+    └── sales_performance.ipynb
