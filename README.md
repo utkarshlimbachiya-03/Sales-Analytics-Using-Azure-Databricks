@@ -50,7 +50,9 @@ Development & Version Control
 
 
 **Project Architecture**
+
 **Phase 1:**
+
 Cloud Processing Stage
 
 Raw Sales Data -> Azure Data Lake Storage -> Azure Databricks -> PySpark (Data Quality Assessment, Data Cleaning) -> Cleaned Dataset -> Delta Lake
@@ -58,28 +60,9 @@ Raw Sales Data -> Azure Data Lake Storage -> Azure Databricks -> PySpark (Data Q
 
 **Phase 2:**
 
-Local Analytical Stage
+Local Analytical Stage 
 
-Persisted Cleaned Data
-        |
-        v
-VS Code / Python
-        |
-        v
-PySpark -> Pandas
-        |
-        +-- Data Reading
-        |
-        v
-DuckDB / SQL
-        |
-        +-- Data Quality Assessment
-        |
-        v
-Business Analysis
-        |
-        v
-Findings & Business Direction
+Persisted Cleaned Data -> VS Code / Python -> PySpark to Pandas (Data Reading) -> DuckDB / SQL (Data Quality Assessment) -> Business Analysis -> Findings & Business Direction
 
 
 **Key Findings**
