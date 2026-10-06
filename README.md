@@ -78,3 +78,27 @@ Persisted Cleaned Data -> VS Code / Python -> PySpark to Pandas (Data Reading) -
 | Outlet Performance | OUT027 recorded approximately 369,578 in total sales | Use as a benchmark for further investigation |
 | Outlet Gap | OUT027 was approximately 51.5% above OUT035 | Investigate differences between stronger and weaker outlets |
 | OUT027 Visibility | Zero- and non-zero-visibility records had almost identical average sales | Visibility alone does not explain OUT027's performance |
+
+
+**Repository Structure**
+
+Sales-Analytics-Using-Azure-Databricks/
+
+|
++-- notebooks/
+|   +-- data_analysis.ipynb
+|   +-- data_quality_investigation.ipynb
+|   +-- sales_performance.ipynb
+|
++-- data/
+|   +-- delta/
+|       +-- sales_cleaned/        # Local data; excluded from Git
+|
++-- sql/                          # SQL analysis / reusable queries
+|
++-- src/                          # Reusable Python code where applicable
+|
++-- DeltaLake.ipynb               # Original Databricks Delta Lake work
++-- Utkarsh_Sales Project.ipynb   # Original ingestion & PySpark cleaning
++-- README.md
++-- .gitignore
